@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>COME $OON!</title>
+  <title>CodePen - CONSTRUCTION</title>
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -10,108 +10,94 @@
 <!-- partial:index.partial.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<style>
-		/* Apply styles to make the video fullscreen */
-		body,
-		html {
-			height: 100%;
-			margin: 0;
-			overflow: hidden;
-			/* Hide scrollbars */
-		}
-
-		/* Apply styles to center the video */
-		.background-video {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-		}
-
-		/* Remove video controls and autoplay */
-		video {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			/* Cover the entire screen without stretching */
-		}
-
-		/* Style for content */
-		.content {
-			position: relative;
-			z-index: 1;
-			/* Place content above the video */
-			text-align: center;
-			padding: 20px;
-		}
+  <meta charset="UTF-8">
+  <title>COME $OON!</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    /* Apply styles to make the image fullscreen */
+    body, html {
+      height: 100%;
+      margin: 0;
+      overflow: hidden; /* Hide scrollbars */
+    }
     
-     /* Style for headings */
-        h1 {
-            color: magenta; /* Set heading text color to orange */
-        }
+    /* Apply styles to center the image */
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('path_to_your_image.jpg'); /* Specify the path to your image */
+      background-size: cover; /* Cover the entire viewport */
+      background-position: center; /* Center the background image */
+    }
 
-        /* Style for links */
-        h2 {
-            color: #f55010; /* Set link text color to light blue */
-            text-decoration: none; /* Remove underlines from links */
-        }
+    /* Style for content */
+    .content {
+      position: relative;
+      z-index: 1; /* Place content above the image */
+      text-align: center;
+      padding: 20px;
+    }
 
-        /* Style for the paragraph */
-        a {
-            color: Blue; /* Set paragraph text color to yellow */
-        }
+    /* Style for headings */
+    h1 {
+      color: white; /* Set heading text color to magenta */
+    }
 
-	</style>
-	<title>Fullscreen Background Video</title>
+    /* Style for links */
+    h2 {
+      color: white; /* Set link text color to light blue */
+      text-decoration: none; /* Remove underlines from links */
+    }
+
+    /* Style for the paragraph */
+    a {
+      color: gold; /* Set paragraph text color to blue */
+    }
+  </style>
 </head>
-
 <body>
-	<div class="background-video">
-		<video autoplay loop muted>
-			<source src="https://shorturl.at/kmzP8" type="video/mp4">
-		</video>
-		<div class="content">
+  <div class="background-image">
+    <div class="content">
       <h1>⚠️"THIS $ITE I$ UNDER CON$TRUCTION"⚠️</h1>
-			<h2 id="randomSentence"</h2>
-      
-      <script>
-      	const sentences = [
- '⚠️“本网站正在建设中”⚠️',
- '⚠️"CE SITE EST EN CONSTRUCTION"⚠️',
-'⚠️"「このサイトは建設中です」"⚠️',
- '⚠️"ESTE SITIO ESTÁ EN CONSTRUCCIÓN"⚠️',
- '"⚠️"QUESTO SITO È IN COSTRUZIONE"⚠️',
-'⚠️"هذا الموقع تحت الإنشاء"⚠️',
- '⚠️"AAYE YI WA LABE IKOLE"⚠️' ,
-'⚠️"HIERDIE WERF IS ONDER KONSTRUKSIE"⚠️',
-						// Add more sentences as needed
-					];
-					// Function to generate a random sentence
-					function generateRandomSentence() {
-						// Get a random index from the array
-						const randomIndex = Math.floor(Math.random() * sentences.length);
-						// Get the random sentence based on the random index
-						const randomSentence = sentences[randomIndex];
-						// Display the random sentence on the web page
-						document.getElementById("randomSentence").textContent = randomSentence;
-					}
-					// Call the function to generate a random sentence initially
-					generateRandomSentence();
-				</script>
-			</body>
+      <h2 id="randomSentence"></h2>
       <h2><a href="#" onclick="goBack()">"TAKE ME BACK"</a></h2>
+    </div>
+  </div>
 
-    <script>
-        function goBack() {
-            window.history.back();
-        }
-    </script> 
-				
+  <script>
+    const sentences = [
+      '⚠️“本网站正在建设中”⚠️',
+      '⚠️"CE SITE EST EN CONSTRUCTION"⚠️',
+      '⚠️"「このサイトは建設中です」"⚠️',
+      '⚠️"ESTE SITIO ESTÁ EN CONSTRUCCIÓN"⚠️',
+      '⚠️"QUESTO SITO È IN COSTRUZIONE"⚠️',
+      '⚠️"هذا الموقع تحت الإنشاء"⚠️',
+      '⚠️"AAYE YI WA LABE IKOLE"⚠️',
+      '⚠️"HIERDIE WERF IS ONDER KONSTRUKSIE"⚠️',
+      // Add more sentences as needed
+    ];
+
+    // Function to generate a random sentence
+    function generateRandomSentence() {
+      // Get a random index from the array
+      const randomIndex = Math.floor(Math.random() * sentences.length);
+      // Get the random sentence based on the random index
+      const randomSentence = sentences[randomIndex];
+      // Display the random sentence on the web page
+      document.getElementById("randomSentence").textContent = randomSentence;
+    }
+
+    // Call the function to generate a random sentence initially
+    generateRandomSentence();
+
+    function goBack() {
+      window.history.back();
+    }
+  </script>
 </body>
 </html>
 <!-- partial -->
